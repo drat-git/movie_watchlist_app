@@ -15,7 +15,7 @@ final List<Movie> sampleMovies = [
   ),
   Movie(
     title: 'The Matrix',
-    posterPath: 'assets/images/movie_poster.png',
+    posterPath: 'assets/images/the_matrix.png',
     cast: ['Keanu Reeves', 'Laurence Fishburne', 'Carrie-Anne Moss'],
     synopsis: 'A computer hacker discovers that his world is a simulation and joins a rebellion against its controllers.',
   ),
