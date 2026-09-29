@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../data/movies_data.dart';
+import 'details_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -37,6 +38,15 @@ class HomeScreen extends StatelessWidget {
               ),
               subtitle: Text(movie.cast.take(2).join(', ')),
               trailing: const Icon(Icons.chevron_right),
+              onTap: () {
+                // Open the details for the movie the user tapped.
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => DetailsScreen(movie: movie),
+                  ),
+                );
+              },
             ),
           );
         },
